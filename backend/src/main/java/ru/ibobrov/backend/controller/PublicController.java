@@ -53,5 +53,3 @@ public class PublicController extends BaseController {
         userService.confirmRegistration(request);
     }
 }
-
-
