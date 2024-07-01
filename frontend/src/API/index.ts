@@ -18,12 +18,12 @@ export const API = {
         const res = await instance.get('/task')
         return res.data
     },
-    async putTask(id: string, task: TaskType) {
-        const res = await instance.put(`/task/${id}`, task)
+    async putTask(id: number, task: TaskType) {
+        const res = await instance.put(`/task/${id}/`, task)
         return res.data
     },
-    async deleteTask(id: string) {
-        const res = await instance.delete(`/task/${id}`)
+    async deleteTask(id: number) {
+        const res = await instance.delete(`/task/${id}/`)
         return res.data
     }
 }

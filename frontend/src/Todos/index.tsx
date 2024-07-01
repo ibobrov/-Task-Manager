@@ -16,7 +16,7 @@ const Todos = () => {
         <>
             <h3>Список задач</h3>
             <ul>
-                {todoList?.map((item) => <CardTodo key={item.key} text={item.val} />)}
+                {todoList?.map((item) => <CardTodo key={item.key} setTodoList={setTodoList} id={item.key} text={item.val} status={item.status} />)}
             </ul>
         </>
     );
