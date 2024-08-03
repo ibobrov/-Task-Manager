@@ -1,11 +1,11 @@
-package ru.bobrov.mailsendler
+package ru.bobrov.mailsender
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class MailSendlerApplication
+class MailSenderApplication
 
 fun main(args: Array<String>) {
-    runApplication<MailSendlerApplication>(*args)
+    runApplication<MailSenderApplication>(*args)
 }

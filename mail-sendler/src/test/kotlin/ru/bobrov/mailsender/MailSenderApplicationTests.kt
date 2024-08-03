@@ -1,10 +1,10 @@
-package ru.bobrov.mailsendler
+package ru.bobrov.mailsender
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class MailSendlerApplicationTests {
+class MailSenderApplicationTests {
 
     @Test
     fun contextLoads() {

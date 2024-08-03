@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mail-sender
+
+  mail:
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    default-encoding: utf-8
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+          allow8bitmime: true
+          connectiontimeout: ${MAIL_SMTP_CONNECTION_TIME_OUT}
+          timeout: ${MAIL_SMTP_TIME_OUT}
+          writetimeout: ${MAIL_SMTP_WRITE_TIME_OUT}
+
+logging:
+  level:
+    org.springframework.web: DEBUG
